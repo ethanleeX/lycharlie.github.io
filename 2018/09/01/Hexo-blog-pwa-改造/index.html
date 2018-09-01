@@ -247,7 +247,7 @@
 
                                                                                                                                                                                                 
                                                                                                                                                                                                     <meta property="article:published_time" content="Sat Sep 01 2018 21:18:30 GMT+0800">
-                                                                                                                                                                                                    <meta property="article:modified_time" content="Sun Sep 02 2018 02:18:18 GMT+0800">
+                                                                                                                                                                                                    <meta property="article:modified_time" content="Sun Sep 02 2018 02:23:05 GMT+0800">
                                                                                                                                                                                                     
 
                                                                                                                                                                                                         <!-- The Twitter Card protocol -->
@@ -270,7 +270,7 @@
     "mainEntityOfPage": "http://masteryi.me/2018/09/01/Hexo-blog-pwa-改造/index.html",
     "headline": "Hexo blog PWA 改造",
     "datePublished": "Sat Sep 01 2018 21:18:30 GMT+0800",
-    "dateModified": "Sun Sep 02 2018 02:18:18 GMT+0800",
+    "dateModified": "Sun Sep 02 2018 02:23:05 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Ethan Lee",
@@ -536,7 +536,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"manifest"</span> <span class="attr">href</span>=<span class="string">"/manifest.json"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>添加完 manifest 之后我们用 chrome 打开 blog 就能在桌面上添加快捷方式。（chrome 为了用户体验 只有在段时间内多次打开网页才会提示添加作业面快捷方式，如果想自己主动添加可以在设置中进行）<br><img src="http://7xr3nz.com1.z0.glb.clouddn.com/image/blog/Hexo-blog-PWA-%E6%94%B9%E9%80%A0/WechatIMG24.jpeg" alt="img"></p>
 <h1 id="缓存资源"><a href="#缓存资源" class="headerlink" title="缓存资源"></a>缓存资源</h1><p>这个是 PWA 最重要的部分，是 PWA 可以离线浏览的原因,也是 PWA 体验优于普通 web app 的原因。我们需要生成一个 ServiceWorker 文件处理缓存相关逻辑。 hexo 有一个叫 <a href="https://github.com/JLHwung/hexo-offline#readme" target="_blank" rel="noopener">hexo-offline</a> 的插件可以帮我们做这部分工作，安装好后根据官网的提示操作即可。完成缓存之后我们就能够实现离线访问，即使在断网的情况下我们也能访问 blog 的内容。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>到这里为止我们的 blog 就改造成了 PWA.</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>到这里为止我们的 blog 就改造成了 PWA. 我们用 lighthouse 跑个分<br><img src="http://7xr3nz.com1.z0.glb.clouddn.com/image/blog/Hexo-blog-PWA-%E6%94%B9%E9%80%A0/Screen%20Shot%202018-09-02%20at%2002.19.55.png" alt="img"></p>
 <p>如果发现文章中有错误，欢迎指正</p>
 
         
